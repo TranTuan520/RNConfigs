@@ -1,11 +1,18 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { Provider } from 'react-redux'
+
+// Store
+import store from '@/Store'
 
 // Navigation
 import AppNavigation from '@/Navigation/AppNavigation'
 
 const index = () => {
-  return <AppNavigation />
+  return (
+    <Provider store={store}>
+      <AppNavigation />
+    </Provider>
+  )
 }
 
 export default index
