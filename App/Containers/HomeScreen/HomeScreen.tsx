@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import Config from 'react-native-config'
 
 // Redux
 import { addTodoRequest, removeTodoRequest } from '@/Store/Todo'
@@ -16,7 +17,7 @@ const HomeScreen = () => {
   const { todoList } = useAppSelector((state) => state.todo)
 
   useEffect(() => {
-    console.log({ todoList })
+    console.log(Config)
   }, [todoList])
 
   const handleAddTodo = () => {

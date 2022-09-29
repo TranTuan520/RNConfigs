@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1210"
+   LastUpgradeVersion = "1400"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -10,16 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cp &quot;${PROJECT_DIR}/../.env.production&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-                     BuildableName = "RNConfigs-Prod.app"
-                     BlueprintName = "RNConfigs"
-                     ReferencedContainer = "container:RNConfigs.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
+               scriptText = "cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -32,9 +23,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "RNConfigs-Prod.app"
-               BlueprintName = "RNConfigs"
+               BlueprintIdentifier = "12DCDB7A28E53D74003866C6"
+               BuildableName = "RNConfigs Dev.app"
+               BlueprintName = "RNConfigs Dev"
                ReferencedContainer = "container:RNConfigs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,21 +41,20 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cp &quot;${PROJECT_DIR}/../.env.production&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
+               scriptText = "cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "12DCDB8D28E53D8A003866C6"
+                     BuildableName = "RNConfigs Staging.app"
+                     BlueprintName = "RNConfigs Staging"
+                     ReferencedContainer = "container:RNConfigs.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
             </ActionContent>
          </ExecutionAction>
       </PreActions>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RNConfigsTests.xctest"
-               BlueprintName = "RNConfigsTests"
-               ReferencedContainer = "container:RNConfigs.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -82,13 +72,13 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cp &quot;${PROJECT_DIR}/../.env.production&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
+               scriptText = "cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-                     BuildableName = "RNConfigs-Prod.app"
-                     BlueprintName = "RNConfigs"
+                     BlueprintIdentifier = "12DCDB8D28E53D8A003866C6"
+                     BuildableName = "RNConfigs Staging.app"
+                     BlueprintName = "RNConfigs Staging"
                      ReferencedContainer = "container:RNConfigs.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -99,12 +89,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNConfigs-Prod.app"
-            BlueprintName = "RNConfigs"
+            BlueprintIdentifier = "12DCDB8D28E53D8A003866C6"
+            BuildableName = "RNConfigs Staging.app"
+            BlueprintName = "RNConfigs Staging"
             ReferencedContainer = "container:RNConfigs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "12DCDB7A28E53D74003866C6"
+            BuildableName = "RNConfigs Dev.app"
+            BlueprintName = "RNConfigs Dev"
+            ReferencedContainer = "container:RNConfigs.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -116,9 +115,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNConfigs-Prod.app"
-            BlueprintName = "RNConfigs"
+            BlueprintIdentifier = "12DCDB7A28E53D74003866C6"
+            BuildableName = "RNConfigs Dev.app"
+            BlueprintName = "RNConfigs Dev"
             ReferencedContainer = "container:RNConfigs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -134,13 +133,13 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cp &quot;${PROJECT_DIR}/../.env.production&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
+               scriptText = "cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-                     BuildableName = "RNConfigs-Prod.app"
-                     BlueprintName = "RNConfigs"
+                     BlueprintIdentifier = "12DCDB8D28E53D8A003866C6"
+                     BuildableName = "RNConfigs Staging.app"
+                     BlueprintName = "RNConfigs Staging"
                      ReferencedContainer = "container:RNConfigs.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
