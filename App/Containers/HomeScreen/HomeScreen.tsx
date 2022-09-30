@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Config from 'react-native-config'
+import { useTranslation } from 'react-i18next'
 
 // Redux
 import { addTodoRequest, removeTodoRequest } from '@/Store/Todo'
@@ -14,6 +15,8 @@ import styles from './Styles/HomeScreenStyles'
 
 const HomeScreen = () => {
   const dispatch = useAppDispatch()
+
+  const { t, i18n } = useTranslation()
   const { todoList } = useAppSelector((state) => state.todo)
 
   useEffect(() => {
@@ -32,7 +35,7 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text onPress={handleAddTodo}>HomeScreen</Text>
+      <Text onPress={handleAddTodo}>{t('home')}</Text>
     </SafeAreaView>
   )
 }
